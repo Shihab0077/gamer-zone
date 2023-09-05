@@ -27,7 +27,7 @@ font-family: 'Work Sans', sans-serif;
   margin-left: 2rem;
   background-color: #4EC5F7;
   padding:15px 30px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #fff;
   font-weight: 600;
   border: 0;
@@ -171,6 +171,30 @@ font-weight: 500;
   
 }
 /* play games section */
+.games-container{
+  margin: 40px 150px 0;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+.game-text{
+  margin-top: 200px;
+}
+.game-text .section-subtitle{
+  margin-top: 30px;
+}
+.game-image1{
+  width: 500px;
+  height: 500px;
+  
+}
+.game-image2{
+  width: 250px;
+  height: 300px;
+  position: relative;
+  bottom: 150px;
+  left: 370px;
+}
 
 /* mobile responsive */
 @media  screen and (max-width:576px) {
@@ -180,7 +204,6 @@ font-weight: 500;
     gap: 50px;
     justify-content: center;
     text-align: center;
-  
   }
   .nav-section ul{
     flex-direction: column;
@@ -219,10 +242,40 @@ font-weight: 500;
   .gamer-card{
     text-align: center;
   }
-  .gamer-card  p{
-    font-size: 0.5rem;
+  .section-subtitle{
+    font-size: 0.6rem;
     text-align: center;
   }
+  .games-container{
+    flex-direction: column-reverse;
+    gap: 30px;
+    margin: 20px 10px;
+  }
+  .game-text{
+    margin-top: 0;
+    text-align: center;
+  }
+  .game-text .section-title-color,.section-title{
+    font-size: 2.1rem;
+    
+  }
+  .game-image{
+    text-align: center;
+  }
+  .game-image1{
+    width:250px;
+    height: 300px;
+    
+    
+  }
+  .game-image2{
+    width: 100px;
+    height: 150px;
+    position: relative;
+   left: 100px;
+   bottom: 100px;
+  }
+  
 }
 
 /* Tablet view */
@@ -247,5 +300,12 @@ font-weight: 500;
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .games-container{
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .game-text{
+    margin-top: 0;
   }
 }
