@@ -13,7 +13,7 @@ font-family: 'Work Sans', sans-serif;
  }
  /* common styles */
 .primary-btn{
-  border-radius: 20px;
+  border-radius: 15px;
   background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
   padding:15px 30px;
   margin-top: 2rem;
@@ -23,7 +23,7 @@ font-family: 'Work Sans', sans-serif;
   border: 0;
 }
 .secondary-btn{
-  border-radius: 20px;
+  border-radius: 10px;
   margin-left: 2rem;
   background-color: #4EC5F7;
   padding:15px 30px;
@@ -39,11 +39,7 @@ font-size: 2.5rem;
 font-weight: 700;
 }
 .section-title-color{
-  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-family: Work Sans;
+ color: #F948B2;
 font-size: 2.5rem;
 font-weight: 700;
 }
@@ -174,6 +170,8 @@ font-weight: 500;
   background: #534C64;
   
 }
+/* play games section */
+
 /* mobile responsive */
 @media  screen and (max-width:576px) {
   .nav-section {
@@ -198,7 +196,6 @@ font-weight: 500;
     height: 500px;
     
   }
- 
   .banner-image img{
     width: 100%;
     height: 100%;
@@ -212,6 +209,19 @@ font-weight: 500;
   }
   .primary-btn{
     margin-right: 5px;
+  }
+  .gamer-section{
+    margin: 40px 10px;
+  }
+  .gamer-container{
+    flex-direction: column;
+  }
+  .gamer-card{
+    text-align: center;
+  }
+  .gamer-card  p{
+    font-size: 0.5rem;
+    text-align: center;
   }
 }
 
@@ -233,5 +243,9 @@ font-weight: 500;
     width: 600px;
     height: 500px;
   }
-
+  .gamer-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
