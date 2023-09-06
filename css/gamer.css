@@ -195,7 +195,30 @@ font-weight: 500;
   bottom: 150px;
   left: 370px;
 }
-
+/* Acton button styles */
+.action-btn{
+  margin: 0 150px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  
+}
+.upper-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.btn-title{
+  color: #0B0223;
+font-size: 0.8rem;
+font-weight: 600;
+}
+.upper-btn:hover{
+  border: 1px solid #FF42A5;
+  border-radius: 50px;
+}
 /* mobile responsive */
 @media  screen and (max-width:576px) {
   .nav-section {
@@ -265,8 +288,6 @@ font-weight: 500;
   .game-image1{
     width:250px;
     height: 300px;
-    
-    
   }
   .game-image2{
     width: 100px;
@@ -275,7 +296,20 @@ font-weight: 500;
    left: 100px;
    bottom: 100px;
   }
-  
+  .upper-action-btn , .lower-action-btn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .action-btn{
+    margin: 0 10px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .upper-btn img{
+    width: 30%;
+  }
+  .btn-title{
+  font-size: 0.5rem;
+}
 }
 
 /* Tablet view */
@@ -307,5 +341,9 @@ font-weight: 500;
   }
   .game-text{
     margin-top: 0;
+  }
+  .action-btn{
+    margin: 0 10px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
