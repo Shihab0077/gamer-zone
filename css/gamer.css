@@ -10,6 +10,7 @@ font-family: 'Work Sans', sans-serif;
  *{
   margin: 0;
   padding: 0;
+  max-width: 1440px;
  }
  /* common styles */
 .primary-btn{
@@ -218,7 +219,55 @@ font-weight: 600;
 .upper-btn:hover{
   border: 1px solid #FF42A5;
   border-radius: 50px;
+  transition: all 0.1s;
 }
+.btn-title:hover{
+  color: #FF42A5;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+/* footer style */
+.footer-container{
+  margin-top: 80px;
+  background-color: #0B0223;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+.footer-container li{
+  list-style: none;
+}
+.footer-title{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-left-title{
+  color: #FF42A5;
+  font-size: 45px;
+  font-weight: 700;
+}
+.footer-title-white{
+  color: #fff;
+}
+.footer-story , .footer-icon, .terms{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.terms, .copyright{
+  color: rgba(255, 255, 255, 0.60);
+font-size: 0.9rem;
+font-weight: 500;
+}
+.copyright{
+  margin-top: 30px;
+}
+
+
 /* mobile responsive */
 @media  screen and (max-width:576px) {
   .nav-section {
@@ -310,6 +359,29 @@ font-weight: 600;
   .btn-title{
   font-size: 0.5rem;
 }
+  .footer-container{
+    margin-top: 40px;
+  }
+  .footer-story,.footer-icon{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+  }
+  .footer-icon{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+  }
+  .terms{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 40px);
+    justify-content: space-around;
+  }
+  .copyright{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Tablet view */
@@ -345,5 +417,23 @@ font-weight: 600;
   .action-btn{
     margin: 0 10px;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-container{
+    margin-top: 40px;
+  }
+  .footer-story,.footer-icon{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+  }
+  .terms{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+  }
+  .copyright{
+    display: flex;
+    flex-direction: column;
   }
 }
